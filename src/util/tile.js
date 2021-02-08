@@ -1,4 +1,3 @@
-import { get } from 'lodash';
 import { MAX_POS } from '../constant';
 import { assert } from './assert';
 import { getRandomInteger } from './number';
@@ -96,7 +95,7 @@ export function moveTile({ tileList, x, y }) {
             (isMoveY
                 ? sorted[i].x === sorted[i + 1]?.x
                 : sorted[i].y === sorted[i + 1]?.y) &&
-            sorted[i].vlaue === sorted[i + 1]?.value
+            sorted[i].value === sorted[i + 1]?.value
         ) {
             const tile = makeTile();
             tile.x = sorted[i].x;

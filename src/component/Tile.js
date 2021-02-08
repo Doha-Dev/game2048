@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 
-export default function Tile(id, x, y, value, isNew, isMerged) {
+export default function Tile({ id, x, y, value, isNew, isMerged }) {
     return (
         <div
             key={id}
